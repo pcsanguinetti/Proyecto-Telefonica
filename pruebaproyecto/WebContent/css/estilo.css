@@ -1,0 +1,9 @@
+@charset "UTF-8";
+
+.container {
+	margin-top: 20px;
+}
+
+.jumbotron {
+	height: 200px;
+}
