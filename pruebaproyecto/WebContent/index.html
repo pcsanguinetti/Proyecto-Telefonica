@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iRef</title>
+	<meta name="descripcion" content="iRef es una página creada para guardar y compartir recursos dentro de una formación" />
+	<meta name="keywords" content="recursos cursos libros web" />
+	<meta name="author" content="Alberto Elena Pablo" />
+	
+	<link rel="manifest" href="img/favicons/manifest.json">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<link rel="shortcut icon" href="img/favicons/logo1.png">  <!-- Icono pestaña navegador -->
+	<meta name="msapplication-TileColor" content="#00a8ff">
+	<meta name="msapplication-config" content="img/favicons/browserconfig.xml">
+	<meta name="theme-color" content="#ffffff">
+	<!-- Normalize -->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<!-- Bootstrap -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<!-- Owl -->
+	<link rel="stylesheet" type="text/css" href="css/owl.css">
+	<!-- Animate.css -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.1.0/css/font-awesome.min.css">
+	<!-- Elegant Icons -->
+	<link rel="stylesheet" type="text/css" href="fonts/eleganticons/et-icons.css">
+	<!-- Main style -->
+	<link rel="stylesheet" type="text/css" href="css/cardio.css">
+
+</head>
+
+<body>
+	
+	<div class="preloader"> 		 Antes de mostrar la página -->
+		<img src="img/loader.gif" alt="Preloader image">
+	</div>
+	<nav class="navbar">
+		<div class="container">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header" id="barra" >
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+				<a class="navbar-brand" href="#"><img id=logoimg src="img/logo.png" data-active-url="img/logo-active.png" alt=""></a>
+			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-right main-nav">
+					<li><a href="#home">Página Principal</a></li>
+					<li><a href="#recursos">Recursos</a></li>
+					<li><a href="#pricing">Sobre nosotros</a></li>
+					<li><a href="agregar.html" class="btn btn-blue">Añadir recurso</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<header id="home">
+		<div class="container">
+			<div class="table">
+				<div class="header-text">
+					<div class="row">
+						<div class="col-md-12 text-center">
+							<h3 class="light white">iRef.</h3>
+							<h1 class="white typed">La web donde compartir todos tus recursos.</h1>
+							<span class="typed-cursor">|</span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	
+	<section id="recursos" class="section section-padded">
+		<div class="container">
+			<div class="row text-center title">
+				<h2>Tipos de recursos</h2>
+				<h4 class="light muted">Selecciona el tipo de recurso que quieres consultar</h4>
+			</div>
+			<div class="row recursos">
+				<a	href="cursos.html" >
+					<div class="col-md-4" >
+						<div class="service">
+							<div class="icon-holder">
+								<img src="img/icons/course.png" alt="" class="icon">
+							</div>
+							<h4 class="heading">Cursos de formación</h4>
+							<p class="description">Recopilación de cursos formativos de interés, tanto gratuitos como de pago, tanto online como presenciales.</p>
+						</div>
+					</div>
+				</a>
+				<a	href="libros.html" >
+					<div class="col-md-4">
+						<div class="service">
+							<div class="icon-holder">
+								<img src="img/icons/doc.png" alt="" class="icon">
+							</div>
+							<h4 class="heading">Libros de consulta</h4>
+							<p class="description">Documentación de interés para compartir entre tus compañeros de curso.</p>
+						</div>
+					</div>
+				</a>
+				<a	href="articulos.html" >
+					<div class="col-md-4">
+						<div class="service">
+							<div class="icon-holder">
+								<img src="img/icons/int.png" alt="" class="icon">
+							</div>
+							<h4 class="heading">Artículos</h4>
+							<p class="description">Noticias de interés relacionadas con la materia del curso.</p>
+						</div>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div class="cut cut-bottom"></div>
+	</section>
+	
+	<section id="pricing" class="section">
+		<div id="sobrenosotros"class="container">
+			<div class="row title text-center">
+				<h2 class="margin-top white">Sobre nosotros y Conecta Empleo</h2>
+				<h4 class="light white">Proyecto de página web para el curso de Desarrollo Web con Java, de Conecta Empleo, Telefónica</h4>
+			</div>
+			<div class="row no-margin">
+				<div class="col-md-7 no-padding col-md-offset-5 pricings text-center">
+					<div class="pricing">
+						<div class="box-main active" data-img="img/pricing1.jpg">
+							<h4 class="white">Componentes del equipo:</h4>
+							<h4>
+								<span class="open-blink"></span>
+							</h4>
+
+							<i class="info-icon icon_question"></i>
+						</div>
+						<div class="box-second active">
+							<ul class="white-list text-left">
+								<li>Pablo Sanguinetti</li>
+								<li>Elena Vega</li>
+								<li>Alberto Vílchez</li>
+
+							</ul>
+						</div>
+					</div>
+					<div class="pricing">
+						<div class="box-main" data-img="img/pricing2.jpg">
+							<h4 id="sobreconecta" class="white">Sobre Conecta Empleo</h4>
+							<h4 class="white regular light">Fundación Telefónica</h4>
+							
+							<i class="info-icon icon_question"></i>
+						</div>
+						<div class="box-second">
+							<h4 class="white-list text-left">
+								<a href="https://www.fundaciontelefonica.com/empleabilidad/conecta-empleo/" 
+								data-toggle="modal" target="_blank" class="btn btn-white-fill">Fundación Telefónica</a>
+								
+							</h4>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	
+	<div class="mobile-nav">
+		<ul>
+		</ul>
+		<a href="#" class="close-link"><i class="arrow_up"></i></a>
+	</div>
+	<!-- Scripts -->
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/typewriter.js"></script>
+	<script src="js/jquery.onepagenav.js"></script>
+	<script src="js/main.js"></script>
+	
+	
+</body>
+
+</html>

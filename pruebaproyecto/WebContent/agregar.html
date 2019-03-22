@@ -14,65 +14,68 @@
 		class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
 		<h5 class="my-0 mr-md-auto font-weight-normal">Curso Java</h5>
 		<nav class="my-2 my-md-0 mr-md-3">
-			<a class="p-2 text-dark" href="#">Tutoriales</a> <a
-				class="p-2 text-dark" href="#">Libros</a> <a class="p-2 text-dark"
-				href="#">Artículos</a>
+			<a class="p-2 text-dark" href="#">Cursos</a> <a class="p-2 text-dark"
+				href="#">Libros</a> <a class="p-2 text-dark" href="#">Artículos</a>
 		</nav>
 		<a class="btn btn-outline-primary" href="#">Agregar recurso</a>
 	</div>
-	
-<div class="container">
-<div class="jumbotron">
-		<h1 class="display-4">Agregar recurso</h1>
-		<p class="lead">Introduce los datos del recurso que quieres recomendar a otros usuarios</p>
-	</div>
-</div>
 
 	<div class="container">
-		<form><fieldset>
+		<div class="jumbotron">
+			<h1 class="display-4">Agregar recurso</h1>
+			<p class="lead">Introduce los datos del recurso que quieres
+				recomendar a otros usuarios</p>
+		</div>
+	</div>
+
+	<div class="container">
+		<form action="AddResource" method="get">
+			<fieldset>
 				<div class="form-group row">
-					<label for="nombre" class="col-sm-2 col-form-label">Nombre</label>
+					<label for="nombre" class="col-sm-2 col-form-label">Nombre </label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="nombre"
-							placeholder="nombre del recurso">
+						<input name="nombre" type="text" class="form-control" id="nombre"
+							placeholder="Nombre del recurso">
 					</div>
 				</div>
 				<div class="form-group row">
-					<label for="autor" class="col-sm-2 col-form-label">Autor</label>
+					<label for="autor" class="col-sm-2 col-form-label">Autor/Institución</label>
 					<div class="col-sm-10">
-						<input type="text" class="form-control" id="autor"
-							placeholder="nombre del autor">
+						<input name="autor" type="text" class="form-control" id="autor"
+							placeholder="Nombre del autor o institución">
 					</div>
 				</div>
 				<div class="form-group row">
 					<label for="link" class="col-sm-2 col-form-label">Link</label>
 					<div class="col-sm-10">
-						<input type="url" class="form-control" id="link"
-							placeholder="link al recurso">
+						<input name="link" type="url" class="form-control" id="link"
+							placeholder="Link al recurso">
 					</div>
 				</div>
 				<div class="form-group row">
-				    <label for="tipo" class="col-sm-2 col-form-label">Tipo de recurso</label>
-				    <div class="col-sm-10">
-				    <select class="form-control" id="tipo">
-				    <option>Tutorial</option>
-				    <option>Artículo</option>
-				    <option>Libro</option>
-				    </select>
-				    </div>
-				 </div>
-				 <div class="form-group row">
+					<label for="tipo" class="col-sm-2 col-form-label">Tipo de recurso</label>
+					<div class="col-sm-10">
+						<select name="tipo" class="form-control" id="tipo">
+							<option>Curso</option>
+							<option>Artículo</option>
+							<option>Libro</option>
+						</select>
+					</div>
+				</div>
+				<div class="form-group row">
 					<label for="descripcion" class="col-sm-2 col-form-label">Descripción</label>
 					<div class="col-sm-10">
-					<textarea class="form-control" id="exampleFormControlTextarea1" rows="4"></textarea>
- 					</div>
+						<textarea name="descripcion" placeholder="Temas que trata, palabras clave..."class="form-control" id="exampleFormControlTextarea1"
+							rows="4"></textarea>
+					</div>
 				</div>
 				<div class="form-group row">
 					<div class="col-sm-10">
 						<button type="submit" class="btn btn-primary">Añadir</button>
 					</div>
 				</div>
-			</fieldset></form>
+			</fieldset>
+		</form>
 	</div>
 
 
@@ -80,31 +83,19 @@
 		<div class="row">
 			<div class="col-md-1"></div>
 			<div class="col-md">
-				<h5>Una web diseñada por</h5>
-				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Alberto</a></li>
-					<li><a class="text-muted" href="#">Elena</a></li>
-					<li><a class="text-muted" href="#">Pablo</a></li>
-				</ul>
+				<a href="index.html#sobrenosotros">Sobre nosotros</a>
 			</div>
 			<div class="col-md">
-				<h5>Más información</h5>
-				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Link a Github</a></li>
-					<li><a class="text-muted" href="#">Mail de contacto</a></li>
-				</ul>
+				<a class="text-muted" target=”_blank”
+					href="https://github.com/IamElenavm/Proyecto-Telefonica">Link a
+					Github</a>
 			</div>
 			<div class="col-md">
-				<h5>Proyecto</h5>
-				<ul class="list-unstyled text-small">
-					<li><a class="text-muted" href="#">Fundación Telefónica</a></li>
-					<li><a class="text-muted" href="#">Programa Conecta Empleo</a></li>
-					<li><a class="text-muted" href="#">Desarrollador Java</a></li>
-					<li><a class="text-muted" href="#">Madrid, 2019</a></li>
-				</ul>
+				<a href="index.html#sobreconecta">Proyecto Fundación Telefónica</a>
 			</div>
 		</div>
 	</footer>
+
 
 	<script
 		src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
